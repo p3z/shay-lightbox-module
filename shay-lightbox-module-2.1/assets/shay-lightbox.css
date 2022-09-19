@@ -1,5 +1,10 @@
+.shay-lightbox-div, .shay-lightbox-img{
+     cursor: pointer;
+}
+
 .shay-lightbox-container{
      background: rgba(0,0,0,0.8);
+     /* This height assumes the DOM height is also 100% ...*/
      height: 100%;
      width: 100%;
      position: fixed;
@@ -16,3 +21,9 @@
      object-fit: cover !important;
      z-index: 1000;
 }
+
+/*to do
+     -> shd defo write some media queries, gonna look ugly on diff size screens!
+     -> shd add an object to the js code so that user can granularly control style settings
+
+*/

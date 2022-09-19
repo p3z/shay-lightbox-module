@@ -2,7 +2,7 @@
 /*
 Plugin Name:	Shay Lightbox Module
 Description:	A simple custom solution for adding lightboxes to images.
-Version:		2.0.0
+Version:		2.1.0
 Author:		Shay Pottle
 License:		MIT
 
@@ -34,11 +34,9 @@ function custom_enqueue_files() {
 	// }
 
 	// loads a CSS file in the head.
-	wp_enqueue_style( 'shay-lightbox-css', plugin_dir_url( __FILE__ ) . 'assets/css/style.css' );
+	wp_enqueue_style( 'shay-lightbox-css', plugin_dir_url( __FILE__ ) . 'assets/shay-lightbox.css' );
 
-	/**
-	 * loads JS files in the footer.
-	 */
-	wp_enqueue_script( 'shay-lightbox-js', plugin_dir_url( __FILE__ ) . 'assets/js/script.js', '', '1', true );
+	// loads JS files in the footer.
+	wp_enqueue_script( 'shay-lightbox-js', plugin_dir_url( __FILE__ ) . 'assets/shay-lightbox.js', '', '1', true );
 
 }
